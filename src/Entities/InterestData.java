@@ -15,6 +15,7 @@ public class InterestData {
 
     }
 
+    //This is a Getters and Setters
     public double getPrincipal() {
         return principal;
     }

@@ -14,6 +14,7 @@ public class MotionData {
         this.baseData = baseData;
     }
 
+    //This is a Getters and Setters
     public double getInitialVelocity() {
         return initialVelocity;
     }

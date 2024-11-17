@@ -12,6 +12,7 @@ public class PhysicsData {
         this.motionData = motionData;
     }
 
+    //This is a Getters and Setters
     public double getMass() {
         return mass;
     }

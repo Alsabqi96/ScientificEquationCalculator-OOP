@@ -10,6 +10,7 @@ public class CircleData {
         this.baseData = baseData;
     }
 
+    //This is a Getters and Setters
     public double getRadius() {
         return radius;
     }

@@ -4,11 +4,13 @@ public class BaseData {
     private int id;
     private String description;
 
+    //This is a Constructor
     public BaseData(int id, String description) {
         this.id = id;
         this.description = description;
     }
 
+    //This is a Getters and Setters
     public int getId() {
         return id;
     }
