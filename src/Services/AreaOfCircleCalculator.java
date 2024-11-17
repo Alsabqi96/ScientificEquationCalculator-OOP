@@ -18,3 +18,4 @@ public class AreaOfCircleCalculator implements CalculatorInterface {
         System.out.println("Area of Circle (A) = " + area);
     }
 }
+
