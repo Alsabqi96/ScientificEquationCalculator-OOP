@@ -103,6 +103,19 @@ public class ScientificCalculatorDriver{
                 Calculator densityCalculator = new DensityCalculator(mass, volume);
                 densityCalculator.calculate();
                 break;
+            case 8:
+                // Compound Interest
+                System.out.print("Enter principal (P): ");
+                principal = scanner.nextDouble();
+                System.out.print("Enter rate (R): ");
+                rate = scanner.nextDouble();
+                System.out.print("Enter time (T): ");
+                time = scanner.nextDouble();
+                PhysicsData physicsDataForCI = new PhysicsData(0, 0, null);
+                InterestData ciData = new InterestData(principal, rate, time, physicsDataForCI);
+                Calculator ciCalculator = new CompoundInterestCalculator(ciData);
+                ciCalculator.calculate();
+                break;
 
 
 
