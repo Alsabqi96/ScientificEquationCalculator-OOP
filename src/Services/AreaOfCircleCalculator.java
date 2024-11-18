@@ -5,7 +5,7 @@ import Interfaces.CalculatorInterface;
 
 public class AreaOfCircleCalculator implements CalculatorInterface {
     private  CircleData circleData;
-    private AreaOfCircleCalculator areaOfCircleCalculator;
+
 
     public AreaOfCircleCalculator(CircleData circleData) {
         this.circleData = circleData;
