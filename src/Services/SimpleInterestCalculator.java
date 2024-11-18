@@ -5,7 +5,7 @@ import Interfaces.CalculatorInterface;
 
 public class SimpleInterestCalculator implements CalculatorInterface {
     private  InterestData interestData;
-    private SimpleInterestCalculator simpleInterestCalculator;
+
 
     public SimpleInterestCalculator(InterestData interestData) {
         this.interestData = interestData;
