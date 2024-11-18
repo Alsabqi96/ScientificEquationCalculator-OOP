@@ -18,7 +18,22 @@ public class ScientificCalculatorDriver{
             System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
     }
+        switch (choice) {
+            case 1:
+                // This used for Final Velocity
+                System.out.print("Enter initial velocity (u): ");
+                double u = scanner.nextDouble();
+                System.out.print("Enter acceleration (a): ");
+                double a = scanner.nextDouble();
+                System.out.print("Enter time (t): ");
+                double t = scanner.nextDouble();
+                BaseData motionBase = new BaseData(1, "Final Velocity Calculation");
+                MotionData motionData = new MotionData(u, a, t, motionBase);
+                Calculator fvCalculator = new FinalVelocityCalculator(motionData);
+                fvCalculator.calculate();
+                break;
 }
+
 
 
 
