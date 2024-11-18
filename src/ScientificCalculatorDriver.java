@@ -83,6 +83,17 @@ public class ScientificCalculatorDriver{
                 Calculator siCalculator = new SimpleInterestCalculator(siData);
                 siCalculator.calculate();
                 break;
+            case 6:
+                // Force
+                System.out.print("Enter mass (m): ");
+                double mass = scanner.nextDouble();
+                System.out.print("Enter acceleration (a): ");
+                a = scanner.nextDouble();
+                MotionData motionDataForForce = new MotionData(0, a, 0, null);
+                PhysicsData physicsData = new PhysicsData(mass, a, motionDataForForce);
+                Calculator forceCalculator = new ForceCalculator(physicsData);
+                forceCalculator.calculate();
+                break;
 
 
 
