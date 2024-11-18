@@ -116,10 +116,22 @@ public class ScientificCalculatorDriver{
                 Calculator ciCalculator = new CompoundInterestCalculator(ciData);
                 ciCalculator.calculate();
                 break;
+            case 9:
+                // Exit
+                System.out.println("Exiting program. Thank you!");
+                break;
+            default:
+                System.out.println("Invalid choice. Please try again.");
+        }
+    } while (choice != 9);
 
-
-
+        scanner.close();
 }
+}
+
+
+
+
 
 
 
