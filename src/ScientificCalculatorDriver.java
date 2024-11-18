@@ -94,6 +94,15 @@ public class ScientificCalculatorDriver{
                 Calculator forceCalculator = new ForceCalculator(physicsData);
                 forceCalculator.calculate();
                 break;
+            case 7:
+                // Density
+                System.out.print("Enter mass (m): ");
+                mass = scanner.nextDouble();
+                System.out.print("Enter volume (V): ");
+                double volume = scanner.nextDouble();
+                Calculator densityCalculator = new DensityCalculator(mass, volume);
+                densityCalculator.calculate();
+                break;
 
 
 
