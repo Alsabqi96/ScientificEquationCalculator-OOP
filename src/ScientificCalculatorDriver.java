@@ -47,6 +47,21 @@ public class ScientificCalculatorDriver{
                 displacementCalculator.calculate();
                 break;
 
+            case 3:
+                // Final Velocity Squared
+                System.out.print("Enter initial velocity (u): ");
+                u = scanner.nextDouble();
+                System.out.print("Enter acceleration (a): ");
+                a = scanner.nextDouble();
+                System.out.print("Enter time (t): ");
+                t = scanner.nextDouble();
+                motionBase = new BaseData(3, "Final Velocity Squared Calculation");
+                motionData = new MotionData(u, a, t, motionBase);
+                Calculator fvsCalculator = new FinalVelocitySquaredCalculator(motionData);
+                fvsCalculator.calculate();
+                break;
+
+
 
 }
 
