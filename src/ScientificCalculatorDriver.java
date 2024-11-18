@@ -32,6 +32,17 @@ public class ScientificCalculatorDriver{
                 Calculator fvCalculator = new FinalVelocityCalculator(motionData);
                 fvCalculator.calculate();
                 break;
+
+            case 2: // Force
+                System.out.print("Enter mass (m): ");
+                double m = scanner.nextDouble();
+                System.out.print("Enter acceleration (a): ");
+                double acc = scanner.nextDouble();
+                MotionData relatedMotionData = new MotionData(0, acc, 0, null);
+                PhysicsData physicsData = new PhysicsData(m, acc, relatedMotionData);
+                Calculator forceCalculator = new ForceCalculator(physicsData);
+                forceCalculator.calculate();
+                break;
 }
 
 
