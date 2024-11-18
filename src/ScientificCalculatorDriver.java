@@ -43,6 +43,19 @@ public class ScientificCalculatorDriver{
                 Calculator forceCalculator = new ForceCalculator(physicsData);
                 forceCalculator.calculate();
                 break;
+
+            case 3: // Simple Interest
+                System.out.print("Enter principal (P): ");
+                double principal = scanner.nextDouble();
+                System.out.print("Enter rate (R): ");
+                double rate = scanner.nextDouble();
+                System.out.print("Enter time (T): ");
+                double time = scanner.nextDouble();
+                PhysicsData interestPhysicsData = new PhysicsData(0, 0, null);
+                InterestData interestData = new InterestData(principal, rate, time, interestPhysicsData);
+                Calculator interestCalculator = new SimpleInterestCalculator(interestData);
+                interestCalculator.calculate();
+                break;
 }
 
 
