@@ -33,29 +33,21 @@ public class ScientificCalculatorDriver{
                 fvCalculator.calculate();
                 break;
 
-            case 2: // Force
-                System.out.print("Enter mass (m): ");
-                double m = scanner.nextDouble();
+            case 2:
+                // Displacement
+                System.out.print("Enter initial velocity (u): ");
+                u = scanner.nextDouble();
                 System.out.print("Enter acceleration (a): ");
-                double acc = scanner.nextDouble();
-                MotionData relatedMotionData = new MotionData(0, acc, 0, null);
-                PhysicsData physicsData = new PhysicsData(m, acc, relatedMotionData);
-                Calculator forceCalculator = new ForceCalculator(physicsData);
-                forceCalculator.calculate();
+                a = scanner.nextDouble();
+                System.out.print("Enter time (t): ");
+                t = scanner.nextDouble();
+                motionBase = new BaseData(2, "Displacement Calculation");
+                motionData = new MotionData(u, a, t, motionBase);
+                Calculator displacementCalculator = new DisplacementCalculator(motionData);
+                displacementCalculator.calculate();
                 break;
 
-            case 3: // Simple Interest
-                System.out.print("Enter principal (P): ");
-                double principal = scanner.nextDouble();
-                System.out.print("Enter rate (R): ");
-                double rate = scanner.nextDouble();
-                System.out.print("Enter time (T): ");
-                double time = scanner.nextDouble();
-                PhysicsData interestPhysicsData = new PhysicsData(0, 0, null);
-                InterestData interestData = new InterestData(principal, rate, time, interestPhysicsData);
-                Calculator interestCalculator = new SimpleInterestCalculator(interestData);
-                interestCalculator.calculate();
-                break;
+
 }
 
 
