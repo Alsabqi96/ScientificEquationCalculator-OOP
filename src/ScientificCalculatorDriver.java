@@ -38,7 +38,6 @@ public class ScientificCalculatorDriver{
                 CalculatorInterface fvCalculator = new FinalVelocityCalculator(motionData);
                 fvCalculator.calculate();
                 break;
-
             case 2:
                 // Displacement
                 System.out.print("Enter initial velocity (u): ");
@@ -52,7 +51,6 @@ public class ScientificCalculatorDriver{
                 CalculatorInterface displacementCalculator = new DisplacementCalculator(motionData);
                 displacementCalculator.calculate();
                 break;
-
             case 3:
                 // Final Velocity Squared
                 System.out.print("Enter initial velocity (u): ");
@@ -66,7 +64,6 @@ public class ScientificCalculatorDriver{
                 CalculatorInterface fvsCalculator = new FinalVelocityCalculator(motionData);
                 fvsCalculator.calculate();
                 break;
-
             case 4:
                 // Area of Circle
                 System.out.print("Enter radius (r): ");
