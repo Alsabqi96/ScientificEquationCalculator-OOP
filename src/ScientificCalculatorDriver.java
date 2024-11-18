@@ -70,6 +70,19 @@ public class ScientificCalculatorDriver{
                 Calculator areaCalculator = new AreaOfCircleCalculator(circleData);
                 areaCalculator.calculate();
                 break;
+            case 5:
+                // Simple Interest
+                System.out.print("Enter principal (P): ");
+                double principal = scanner.nextDouble();
+                System.out.print("Enter rate (R): ");
+                double rate = scanner.nextDouble();
+                System.out.print("Enter time (T): ");
+                double time = scanner.nextDouble();
+                PhysicsData physicsDataForSI = new PhysicsData(0, 0, null);
+                InterestData siData = new InterestData(principal, rate, time, physicsDataForSI);
+                Calculator siCalculator = new SimpleInterestCalculator(siData);
+                siCalculator.calculate();
+                break;
 
 
 
