@@ -61,6 +61,16 @@ public class ScientificCalculatorDriver{
                 fvsCalculator.calculate();
                 break;
 
+            case 4:
+                // Area of Circle
+                System.out.print("Enter radius (r): ");
+                double r = scanner.nextDouble();
+                BaseData circleBase = new BaseData(4, "Area of Circle Calculation");
+                CircleData circleData = new CircleData(r, circleBase);
+                Calculator areaCalculator = new AreaOfCircleCalculator(circleData);
+                areaCalculator.calculate();
+                break;
+
 
 
 }
