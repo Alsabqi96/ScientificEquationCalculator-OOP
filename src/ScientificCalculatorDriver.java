@@ -54,16 +54,15 @@ public class ScientificCalculatorDriver {
                     displacementCalculator.calculate();
                     break;
                 case 3:
-                    // Final Velocity Squared
                     System.out.print("Enter initial velocity (u): ");
-                    u = scanner.nextDouble();
+                    u = scanner.nextDouble(); // Initial velocity
                     System.out.print("Enter acceleration (a): ");
-                    a = scanner.nextDouble();
+                    a = scanner.nextDouble(); // Acceleration
                     System.out.print("Enter time (t): ");
-                    t = scanner.nextDouble();
+                    t = scanner.nextDouble(); // Time
                     motionBase = new BaseData(3, "Final Velocity Squared Calculation");
                     motionData = new MotionData(u, a, t, motionBase);
-                    CalculatorInterface fvsCalculator = new FinalVelocityCalculator(motionData);
+                    CalculatorInterface fvsCalculator = new FinalVelociytSquaredCalculator(motionData);
                     fvsCalculator.calculate();
                     break;
                 case 4:
@@ -132,6 +131,7 @@ public class ScientificCalculatorDriver {
         }
     }
 }
+
 
 
 
