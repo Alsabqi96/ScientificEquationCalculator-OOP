@@ -18,6 +18,7 @@ public class FinalVelociytSquaredCalculator implements CalculatorInterface {
 
         double displacement = (motionData.getInitialVelocity() * motionData.getTime())
                 + (0.5 * motionData.getAcceleration() * Math.pow(motionData.getTime(), 2));
+        System.out.println("Displacement (s) = " + displacement);
 
         double finalVelocitySquared = Math.pow(motionData.getInitialVelocity(), 2)
                 + (2 * motionData.getAcceleration() * displacement);
@@ -25,4 +26,5 @@ public class FinalVelociytSquaredCalculator implements CalculatorInterface {
 
     }
 }
+
 
