@@ -12,8 +12,10 @@ public class DisplacementCalculator implements CalculatorInterface {
 
     @Override
     public void calculate() {
-        double displacement = motionData.getInitialVelocity() * motionData.getTime()
-                + 0.5 * motionData.getAcceleration() * Math.pow(motionData.getTime(), 2);
+        double displacement = (motionData.getInitialVelocity() * motionData.getTime()) +
+                (0.5 * motionData.getAcceleration() * Math.pow(motionData.getTime(), 2));
         System.out.println("Displacement (s) = " + displacement);
     }
 }
+
+

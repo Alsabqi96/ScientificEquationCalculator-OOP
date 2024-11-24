@@ -54,6 +54,7 @@ public class ScientificCalculatorDriver {
                     displacementCalculator.calculate();
                     break;
                 case 3:
+                    //Final Velocity Squared
                     System.out.print("Enter initial velocity (u): ");
                     u = scanner.nextDouble(); // Initial velocity
                     System.out.print("Enter acceleration (a): ");
@@ -131,6 +132,7 @@ public class ScientificCalculatorDriver {
         }
     }
 }
+
 
 
 
